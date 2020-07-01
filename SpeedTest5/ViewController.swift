@@ -2,23 +2,40 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    @IBOutlet weak var redButton: UIButton!
+    @IBOutlet weak var blueButton: UIButton!
+    @IBOutlet weak var greenButton: UIButton!
+    @IBOutlet weak var yellowButton: UIButton!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        redButton.layer.cornerRadius = 15
+        blueButton.layer.cornerRadius = 15
+        greenButton.layer.cornerRadius = 15
+        yellowButton.layer.cornerRadius = 15
+        
+    }
+    
     @IBAction func red() {
-        view.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+        view.backgroundColor = UIColor.red
         
     }
     
     @IBAction func blue() {
-        view.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+        view.backgroundColor = UIColor.blue
     }
     
     
     
     @IBAction func yellow() {
-        view.backgroundColor = #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)
+        view.backgroundColor = UIColor.yellow
     }
     
     @IBAction func green() {
-        view.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+        view.backgroundColor = UIColor.green
     }
     
     
